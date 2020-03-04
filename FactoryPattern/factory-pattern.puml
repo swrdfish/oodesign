@@ -1,0 +1,11 @@
+@startuml
+Interface Product
+Class Client
+Class ConcreteProduct
+Class Factory
+
+Client --> Product : uses
+Client --> Factory : ask for a new object
+Product <|.. ConcreteProduct
+Factory --> ConcreteProduct : creates
+@enduml
